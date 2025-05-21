@@ -242,7 +242,7 @@ h1 {animation: fadein 1s;animation-duration: 3s;animation-delay: none;}
 
 /*FONDO DE PAGINA*/
 body {
-    background-image: url(/FONDOFONDO.jpg);
+    background-image: url(FONDOFONDO.jpg);
     
 }
 
