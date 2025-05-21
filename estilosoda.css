@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: hsl(0, 33%, 33%);
+    color: #f4f0f0;
+}
+
+header {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    animation: entradaHeader 2s ease-out;
+    background-image: url('loguito.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(20, 20, 20, 0.877); /* Capa rosada semi-transparente */
+    z-index: 0;
+}
+
+header .titulo,
+header .menu {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu a:hover {
+    color: #ffd6dc;
+}
+
+.contenido {
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #edf3f5;
+    margin-bottom: 20px;
+}
+P2{color: #151515;
+    }
+h3 {
+    font-family: 'Pacifico', cursive;
+    color: #0b0b0b;
+    margin-bottom: 20px;
+}
+
+.carta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item {
+    background: #eeeaea;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(233, 228, 228, 0.938);
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f3f0f0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #faf4f5;
+    color: rgba(16, 15, 15, 0.916);
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Animaciones */
+@keyframes entradaHeader {
+    from { top: -100px; opacity: 0; }
+    to { top: 0; opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* ...todo lo anterior permanece igual... */
+
+.imagen-bienvenida {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease;
+}
+
+.imagen-menu {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.imagen-bienvenida {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: entrada 1s ease-out forwards;
+    }
+
+    @keyframes entrada {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+    }

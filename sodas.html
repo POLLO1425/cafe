@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SODAS ITALINAS</title>
+    <link rel="stylesheet" href="estilosoda.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">SODAS ITALIANAS</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="cafes.html">Cafe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="contenido">
+        <h2>Bienvenidos</h2>
+        <p>Disfruta de una refrescante soda al estilo sook, la mejor elección para tu paladar.</p>
+        <!-- NUEVO: Imagen principal -->
+       
+        <video autoplay loop width="600px" height="400px" controls>
+        <source src="VIDEO3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="menu" class="contenido">
+        <h2>Nuestro Menú</h2>
+        <div class="carta">
+           
+            <div class="item">
+                <img src="menusoda1.jpg" alt="soda limon" class="imagen-menu"> <!-- NUEVO -->
+                <h3>freshh</h3>
+                <p2>Limón  con hojas frescas de menta italiana.
+                    Esta soda es perfecta para empezar cualquier proyecto (o día) con claridad y frescura.
+                     Refresca tu cuerpo y mente,"header" como un buen refresh al navegador..</p2>
+
+                <span>$12.900</span>
+                <form action="#" method="post" class="form-carrito">
+                <input type="hidden" name="producto" value="Café espresso Premium">
+                 <input type="hidden" name="precio" value="12.900">
+                    <label>Cantidad:
+                        <input type="number" name="cantidad" min="1" max="10" value="1" style="width: 50px;">
+                    </label>
+                    <button type="submit" class="agregar-carrito">Agregar</button>
+                </form>   
+            </div>
+            <div class="item">
+                <img src="menusoda2.jpg" alt="Soda Blueberry" class="imagen-menu"> <!-- NUEVO -->
+                <h3>Blueberry Div</h3>
+                <p2>
+                Arándanos italianos macerados con lavanda y un toque de limón verde.
+                Una base sólida, como un buen "div"  contenedor. 
+                Sabor profundo con estructura suave, ideal para mantenerte centrado y refrescado
+                </p2>
+                
+                <span>$12.900</span>
+                <form action="#" method="post" class="form-carrito">
+                <input type="hidden" name="producto" value="soda Blueberry">
+                 <input type="hidden" name="precio" value="12.900">
+                    <label>Cantidad:
+                        <input type="number" name="cantidad" min="1" max="10" value="1" style="width: 50px;">
+                    </label>
+                    <button type="submit" class="agregar-carrito">Agregar</button>
+                </form>   
+            </div>
+            <div class="item">
+                <img src="menusoda3.jpg" alt="soda arandano" class="imagen-menu">
+                <h3> RedClass Berry</h3>
+                <p2>
+                    Frutos rojos silvestres con frambuesa, cereza negra y un toque de hibisco.
+                    Tan llamativa como una clase .highlight en CSS. 
+                    Esta soda da estilo con sabor intenso y bien definido, 
+                    perfecta para marcar la diferencia en tu día.</p2>
+                <span>$12.900</span>
+                <form action="#" method="post" class="form-carrito">
+                <input type="hidden" name="producto" value="soda arandano">
+                 <input type="hidden" name="precio" value="">
+                    <label>Cantidad:
+                        <input type="number" name="cantidad" min="1" max="10" value="1" style="width: 50px;">
+                    </label>
+                    <button type="submit" class="agregar-carrito">Agregar</button>
+                </form>   
+                
+            </div>
+            <div class="item">
+                <img src="menusoda4.jpg" alt="soda maracuya" class="imagen-menu">
+                <h3> FFFFruit Splash</h3>
+                <p2>
+                    Mezcla tropical de mango, maracuyá y durazno amarillo.
+                    Un verdadero color de fondo para el verano. Brillante 
+                    como un background-color 
+                    esta soda te pone en modo sol y creatividad</p2>
+                <span>$12.900</span>
+                  <form action="add.html" method="post" class="form-carrito">
+                <input type="hidden" name="producto" value="Café espresso Premium">
+                 <input type="hidden" name="precio" value="5000">
+                    <label>Cantidad:
+                        <input type="number" name="cantidad" min="1" max="10" value="1" style="width: 50px;">
+                    </label>
+                    <button type="submit" class="agregar-carrito">Agregar</button>
+                </form>   
+             </div>
+            </div>
+        </div>
+    </section>
+    <section id="adicionales" class="contenido">
+        <h2>Bebidas</h2>
+        <p>Agua: $2.500</p>
+        <p>Aloe Vera: $3.000</p>
+
+    </section>
+
+
+</section>
+    <section id="contacto" class="contenido">
+        <h2>Contáctanos</h2>
+        <p>WhatsApp: 55 1234 5678</p>
+        <p>Instagram: @COFFI</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 COFFI. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
